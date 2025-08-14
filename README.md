@@ -13,8 +13,8 @@ You've been building websites with HTML and CSS - now it's time to see how desig
 
 ![img](./assets/figma-landing-page.png)
 
-3. Click the `Design` button in the tool bar on the top left of the page
-4. If you see a different page, it could happen that they have updated this page. Just find the `Design` button
+3. Click the `Design` button in the tool bar on the top right of the page
+4. If you see a different page, it could happen that Figma have updated the page's layout. Just find the `Design` button
 
 ### Your First File
 1. Click `Design` and skip any ads you might be seeing. This is creating a new design file for you
@@ -23,33 +23,43 @@ You've been building websites with HTML and CSS - now it's time to see how desig
 
 ---
 
-## Exercise 1: The Figma Interface Tour (10 minutes)
+## Exercise 1: The Figma Interface Tour
 
 ### Part A: Get Your Bearings
-Think of Figma like your code editor, but for visual design. Let's explore:
 
-**The Canvas** (center area)
-- This is like your HTML document - where everything lives
-- Zoom: `Ctrl/Cmd + scroll` or use zoom controls (top right)
-- Pan: Hold `Space + drag` or use middle mouse button
+Figma is like your code editor, but for design. Here’s what you’ll see:
 
-**The Toolbar** (top)
-- Contains all your design tools (we'll use these shortly)
-- Think of these like HTML elements you can add
+**Canvas (middle area):**
 
-**Layers Panel** (left)
-- Like viewing your HTML structure/DOM tree
-- Shows all elements on your canvas hierarchically
+![img](./assets/figma-design-home.png)
 
-**Properties Panel** (right)
-- Like CSS properties for selected elements
-- Change colors, sizes, effects, etc.
+- This is your workspace, like the main part of an HTML page.
+- Zoom in and out: Use `Ctrl/Cmd + scroll` or `Ctrl/Cmd and +`.
+
+**Toolbar (bottom of the canvas):**
+- Has all the tools you’ll use to draw shapes, add text, and more.
+- Think of these as buttons to add things to your design.
+
+**Layers Panel (left side):**
+- Shows everything you’ve added, like a list.
+- It’s like seeing the structure of your HTML page.
+
+**Properties Panel (right side):**
+- Lets you change how things look — colours, size, borders, etc.
+- It’s like editing CSS for your design.
+
 
 ### Part B: Create Your First Shape
-1. Click the **Rectangle tool** (R) in the toolbar
+1. Click the **Rectangle tool**  in the toolbar or press **R** key
 2. Draw a rectangle anywhere on the canvas
 3. Notice it appears in the Layers panel on the left
-4. With it selected, look at the Properties panel on the right
+4. With it selected, look at the Properties panel on the right.
+
+![rectangular](./assets/rectangular.png)
+
+5. Let's add a blue background colour to it. You can do so by selecting the rectangle and changing the `fill` property value from the right pannel. You can just type **blue** in the field and now your rectagle has a blue background.
+
+![blue-rectangular](./assets/blue-rectangular.png)
 
 **Think About It:** How is this similar to creating a `<div>` in HTML and styling it with CSS?
 
@@ -64,42 +74,115 @@ Create these elements (think of them as HTML elements you'd style):
 2. **Circle (O)**: Hold `Shift` while dragging to make perfect circles
 3. **Text (T)**: Click and type "Hello Figma!"
 4. **Line (L)**: Draw a simple line
+5. **Arrow(Ctrl + L)**: Draw an arrow
 
-### Part B: The Properties Panel (Your CSS in Figma)
-Select your rectangle and explore these "CSS-like" properties:
+# Figma Properties Tutorial: CSS for Designers
 
-**Fill** (like `background-color`)
-- Click the color square
-- Try different colors
-- Try gradients from the dropdown
+## Part B: The Properties Panel (Your Visual CSS Editor)
 
-**Stroke** (like `border`)
-- Click the + next to Stroke
-- Change color and thickness
-- Try different stroke positions (inside, outside, center)
+Start by selecting your rectangle to explore these CSS-like properties:
 
-**Corner Radius** (like `border-radius`)
-- Drag the corner radius slider
-- Try different values
+### Visual Styling
 
-**Size & Position** (like `width`, `height`, `position`)
-- Change W (width) and H (height) values
-- Change X and Y coordinates
+#### **Fill** (equivalent to `background-color`)
+- Click the color square to open the color picker
+- Experiment with solid colors using the color wheel
+- Try gradients by selecting from the fill type dropdown
+- **Pro tip:** Use the eyedropper tool to sample colors from other elements
 
-### Part C: Typography (Your CSS Font Properties)
-Select your text and explore:
-- Font family dropdown
-- Font size
-- Font weight (like `font-weight: bold`)
-- Text alignment
-- Line height
-- Letter spacing
+#### **Stroke** (equivalent to `border`)
+- Click the **+** button next to "Stroke" to add a border
+- Adjust color and thickness using the controls
+- Experiment with stroke positions:
+  - **Inside:** Border appears within the shape
+  - **Outside:** Border extends beyond the shape
+  - **Center:** Border straddles the edge (default)
 
-**💡 Pro Tip:** These properties work just like CSS - you're just using a visual interface instead of typing code!
+#### **Corner Radius** (equivalent to `border-radius`)
+- Use the corner radius slider to create rounded corners
+- Try different values: `0` for sharp corners, higher values for more rounded
+
+### Size & Positioning
+
+#### **Dimensions** (equivalent to `width` and `height`)
+- Modify **W** (width) and **H** (height) values directly
+- **Tip:** Hold `Shift` while dragging handles to maintain proportions
+
+#### **Position** (equivalent to CSS positioning)
+- Change **X** and **Y** coordinates for precise placement
+- Use the alignment tools for quick positioning relative to frames
+- **Advanced:** Try constraining elements to edges for responsive behavior
+
+### Visual Effects
+
+#### **Appearance Controls** (equivalent to `opacity`, `box-shadow`, `blend-mode`)
+- **Opacity:** Use the slider to make elements transparent (0-100%)
+- **Effects:** Click the **+** to add:
+  - Drop shadows for depth
+  - Inner shadows for inset effects
+  - Blur for focus effects
+- **Blend Modes:** Experiment with different modes for creative color interactions
 
 ---
 
-## Exercise 3: Build a Simple Card Component (15 minutes)
+## Part C: Typography (Your Font CSS Properties)
+
+Select any text element to access these typography controls:
+
+### Basic Text Properties
+- **Font Family:** Choose from the dropdown (like `font-family`)
+- **Font Size:** Adjust the numerical value (like `font-size`)
+- **Font Weight:** Select Regular, Bold, etc. (like `font-weight`)
+- **Text Color:** Click the color square to change text color
+
+### Text Layout & Spacing
+- **Text Alignment:** Left, center, right, or justify
+- **Line Height:** Control space between lines (like `line-height`)
+- **Letter Spacing:** Adjust space between characters (like `letter-spacing`)
+- **Paragraph Spacing:** Add space between paragraphs
+
+---
+
+## Part D: More Advanced Layout Controls
+
+### Layer Management (equivalent to `z-index`)
+In the **Layers Panel** (That's the left sidebar) - You right-click on the layer or use a keyboard shortcut to perfor the actions below:
+- Drag layers up/down to change stacking order
+- Use **Bring Forward** (Cmd/Ctrl + ]) or **Send Backward** (Cmd/Ctrl + [)
+- Higher layers appear in front, lower layers appear behind
+
+### Alignment & Distribution
+- **Manual Alignment:** Use alignment tools to position relative to frames
+  - Left, center, right alignment
+  - Top, middle, bottom alignment
+- **Distribution:** Evenly space multiple selected elements
+
+### Auto Layout (equivalent to CSS Flexbox)
+**Auto Layout** is Figma's most powerful layout feature:
+
+#### Setting Up Auto Layout
+1. Select multiple elements or a frame
+2. Click the **Auto Layout** button or press `Shift + A`
+3. Elements automatically arrange with consistent spacing
+
+#### Auto Layout Controls
+- **Direction:** Switch between horizontal and vertical arrangement
+- **Alignment:** Control how items align within the container
+- **Padding:** Add internal spacing (like CSS `padding`)
+- **Gap:** Control spacing between items (like CSS `gap`)
+- **Resizing:** Set how items grow or shrink
+
+#### Auto Layout Benefits
+- **Responsive:** Elements automatically adjust when content changes
+- **Consistent:** Maintains perfect spacing without manual adjustment
+- **Efficient:** Like writing `display: flex` but with visual controls
+
+
+**Pro Tip:** These properties work just like CSS. You're just using a visual interface instead of typing code!
+
+---
+
+## Exercise 3: Build a Simple Card Component
 
 Let's create something you might actually code - a user card component!
 
@@ -114,9 +197,10 @@ Let's create something you might actually code - a user card component!
 1. Create a circle inside your card
 2. Size: 60px × 60px
 3. Position it in the top-left area of the card
-4. Fill: Choose any color (this represents a profile image)
+4. Add a character letter in it
+5. Fill: Choose any color (this represents a profile image)
 
-### Step 3: Add Text Content
+### Step 3: Add Text Content on the right side of the avatar
 Create these text elements (stack them vertically):
 
 **Name:** 
@@ -127,6 +211,7 @@ Create these text elements (stack them vertically):
 **Title:**
 - Text: "Frontend Developer"
 - Font size: 14px
+- Font weight: Regular
 - Color: #666666 (gray)
 
 **Email:**
@@ -139,11 +224,15 @@ Create these text elements (stack them vertically):
 - Use the alignment tools in the toolbar to align text
 - Leave margins around the edges (like CSS padding)
 
-**🎯 Challenge:** Think about how you'd code this card in HTML/CSS. What elements would you use? How would you structure the CSS?
+***Result****: your card should look similar to the one in the screenshot below:
+
+![profile-card](./assets/profile-card.png)
+
+**Challenge:** Think about how you'd code this card in HTML/CSS. What elements would you use? How would you structure the CSS?
 
 ---
 
-## Exercise 4: Frames & Auto Layout (10 minutes)
+## Exercise 4: Frames & Auto Layout
 
 Frames are like `<div>` containers that help organize your design.
 
@@ -162,11 +251,11 @@ Frames are like `<div>` containers that help organize your design.
    - Padding (like CSS padding)
    - Alignment (like flexbox alignment)
 
-**🤯 Mind Blown Moment:** Auto Layout works very similar to CSS Flexbox - it automatically arranges child elements!
+Auto Layout works very similar to CSS Flexbox. t automatically arranges child elements!
 
 ---
 
-## Exercise 5: Components & Design Systems (8 minutes)
+## Exercise 5: Components & Design Systems
 
 Components in Figma are like reusable CSS classes - create once, use everywhere!
 
@@ -174,7 +263,7 @@ Components in Figma are like reusable CSS classes - create once, use everywhere!
 1. **Select your best card design** from the previous exercises
 2. **Right-click** → "Create component" or press Ctrl/Cmd+Alt+K
 3. **Notice the purple outline** - this indicates it's now a master component
-4. **Rename it**: Double-click the layer name and call it "User Card"
+4. **Rename it**: Double-click the layer name on the lef pannel and call it "User Card"
 
 ### Part B: Create Instances
 1. **Drag the component** from the Assets panel (left sidebar) onto your canvas
@@ -188,24 +277,27 @@ With each instance, you can override specific properties:
 3. **Change colors** of the avatar circles
 4. **Notice**: All instances maintain the same structure and styling, but with different content
 
+***Result:*** You should have multiple cards with different text and colours like below
+![user-cards](./assets/user-cards.png)
+
 **🔧 Developer Connection:** This is like having a CSS component class that you can reuse with different content - same structure, different data!
 
 ---
 
-## Exercise 6: Collaboration Features (7 minutes)
+## Exercise 6: Collaboration Features
 
 Figma's real power is in real-time collaboration - like Google Docs but for design!
 
 ### Part A: Share Your File
-1. **Click "Share" button** (top right)
+1. **Click "Share" button on the top right**
 2. **Copy the link** and save it (you'll use this to invite others)
 3. **Set permissions**: 
    - "Can view" = Read-only access
    - "Can edit" = Full editing access
-4. **Try sharing** with a classmate if possible, or bookmark for later
+4. **Try sharing** with a classmate
 
 ### Part B: Comments & Feedback
-1. **Select the comment tool** (C key or speech bubble icon)
+1. **Select the comment tool** (or press C key or speech bubble icon)
 2. **Click anywhere** on your design to add a comment
 3. **Type a comment** like: "Should this text be bigger?"
 4. **Tag someone** using @ if you shared with classmates
@@ -217,7 +309,7 @@ Figma's real power is in real-time collaboration - like Google Docs but for desi
 3. **See snapshots** of your file at different times
 4. **Click any version** to see what it looked like then
 
-**💼 Professional Insight:** In real projects, designers and developers use comments to discuss implementation details, and version history helps track design evolution!
+**Professional Insight:** In real projects, designers and developers use comments to discuss implementation details, and version history helps track design evolution!
 
 ---
 
